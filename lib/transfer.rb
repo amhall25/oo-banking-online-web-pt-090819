@@ -1,4 +1,4 @@
-require 'pry'
+
 class Transfer
   attr_accessor :sender, :receiver, :amount, :status
   def initialize(sender, receiver, amount)
@@ -21,6 +21,6 @@ class Transfer
       @status = "rejected"
       puts "Transaction rejected. Please check your account balance."
     end
-    binding.pry
+    
   end
 end
